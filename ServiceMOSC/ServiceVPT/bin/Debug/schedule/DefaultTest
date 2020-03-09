@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schedule>
+    <pair name="Pair0">
+        <StartHour>16</StartHour>
+        <StartMinutes>12</StartMinutes>
+        <EndHour>16</EndHour>
+        <EndMinutes>14</EndMinutes>
+    </pair>
+    
+    <pair name="Pair1">
+        <StartHour>16</StartHour>
+        <StartMinutes>16</StartMinutes>
+        <EndHour>16</EndHour>
+        <EndMinutes>18</EndMinutes>
+    </pair>
+    
+    <pair name="Pair2">
+        <StartHour>16</StartHour>
+        <StartMinutes>20</StartMinutes>
+        <EndHour>16</EndHour>
+        <EndMinutes>22</EndMinutes>
+    </pair>
+    
+    <pair name="Pair3">
+        <StartHour>23</StartHour>
+        <StartMinutes>20</StartMinutes>
+        <EndHour>23</EndHour>
+        <EndMinutes>40</EndMinutes>
+    </pair>
+    
+    <pair name="Pair4">
+        <StartHour>23</StartHour>
+        <StartMinutes>20</StartMinutes>
+        <EndHour>23</EndHour>
+        <EndMinutes>40</EndMinutes>
+    </pair>
+    
+    <pair name="Pair5">
+        <StartHour>23</StartHour>
+        <StartMinutes>20</StartMinutes>
+        <EndHour>23</EndHour>
+        <EndMinutes>40</EndMinutes>
+    </pair>
+    
+    <pair name="Pair6">
+        <StartHour>23</StartHour>
+        <StartMinutes>20</StartMinutes>
+        <EndHour>23</EndHour>
+        <EndMinutes>40</EndMinutes>
+    </pair>
+    
+    <pair name="Pair7">
+        <StartHour>23</StartHour>
+        <StartMinutes>20</StartMinutes>
+        <EndHour>23</EndHour>
+        <EndMinutes>40</EndMinutes>
+    </pair>
+</Schedule>

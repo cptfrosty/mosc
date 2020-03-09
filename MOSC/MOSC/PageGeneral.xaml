@@ -1,0 +1,23 @@
+﻿<Page x:Class="VPT_CALL_TO_CLASS.PageGeneral"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VPT_CALL_TO_CLASS"
+      mc:Ignorable="d" 
+      d:DesignHeight="586" d:DesignWidth="526"
+      Title="PageGeneral" x:Name="pageGeneral">
+
+    <Grid Background="White">
+        <Canvas>
+            <TextBlock Text="Статус службы: " FontSize="16" Canvas.Top="10" Canvas.Left="10"/>
+            <TextBlock x:Name="infoService" Text="Работает" FontSize="16" Canvas.Left="130" Canvas.Top="10" Foreground="Green" Width="149"/>
+            <Button x:Name="btnRunService" Content="Запустить" Canvas.Left="67" Canvas.Top="36" Click="btnRunService_Click"/>
+            <Button x:Name="btnOffService" Content="Отключить" Canvas.Left="130" Canvas.Top="36" Click="btnOffService_Click"/>
+
+            <TextBlock x:Name="timeNow" Text="Время сейчас: Обновляю..." FontSize="16" Canvas.Left="10" Canvas.Top="87" Width="506"/>
+            <TextBlock x:Name="typeSchedule" Text="Служба работает по расписанию: Основное расписание" FontSize="16" Canvas.Left="10" Canvas.Top="61" Width="506"/>
+            <TextBlock x:Name="sheduleNext" Text="Звонок в: Обновляю..." FontSize="16" Canvas.Left="10" Canvas.Top="113" Width="506"/>
+        </Canvas>
+    </Grid>
+</Page>

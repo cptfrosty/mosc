@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Task>
+  <Task name0="Task0">
+    <indexTypeTask>TrainingAlert</indexTypeTask>
+    <indexTypeMelody>TrainingAlert</indexTypeMelody>
+    <day>123</day>
+    <mounth>32</mounth>
+    <year>12</year>
+    <hour>123</hour>
+    <minutes>321</minutes>
+  </Task>
+</Task>

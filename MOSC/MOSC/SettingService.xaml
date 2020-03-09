@@ -1,0 +1,23 @@
+﻿<Window x:Class="VPT_CALL_TO_CLASS.SettingService"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VPT_CALL_TO_CLASS"
+        mc:Ignorable="d"
+        Title="Настройка службы VPT_CALL_TO_CLASS" Height="700" Width="770" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="183*"/>
+            <ColumnDefinition Width="581*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <Button x:Name="btnGeneral" Content="Общее" FontSize="16" Height="50" Click="btnGeneral_Click"/>
+            <Button x:Name="btnSchedule" Content="Расписание" FontSize="16" Height="50" Click="btnSchedule_Click"/>
+            <Button x:Name="btnTask" Content="Задачи" FontSize="16" Height="50" Click="btnTask_Click"/>
+            <Button Content="Ресурсы" FontSize="16" Height="50"/>
+        </StackPanel>
+
+        <Frame x:Name="pageContent" Grid.Column="1" Margin="10" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

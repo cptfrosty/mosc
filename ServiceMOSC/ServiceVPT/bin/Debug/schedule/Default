@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schedule>
+  <pair0start name="startPair">
+    <hour>22</hour>
+    <minutes>11</minutes>
+  </pair0start>
+  <pair0end name="endPair">
+    <hour>11</hour>
+    <minutes>11</minutes>
+  </pair0end>
+  <pair1start name="startPair">
+    <hour>22</hour>
+    <minutes>11</minutes>
+  </pair1start>
+  <pair1end name="endPair">
+    <hour>11</hour>
+    <minutes>11</minutes>
+  </pair1end>
+  <pair2start name="startPair">
+    <hour>22</hour>
+    <minutes>11</minutes>
+  </pair2start>
+  <pair2end name="endPair">
+    <hour>11</hour>
+    <minutes>11</minutes>
+  </pair2end>
+  <pair3start name="startPair">
+    <hour>22</hour>
+    <minutes>11</minutes>
+  </pair3start>
+  <pair3end name="endPair">
+    <hour>16</hour>
+    <minutes>11</minutes>
+  </pair3end>
+  <pair4start name="startPair">
+    <hour>22</hour>
+    <minutes>11</minutes>
+  </pair4start>
+  <pair4end name="endPair">
+    <hour>11</hour>
+    <minutes>11</minutes>
+  </pair4end>
+  <pair5start name="startPair">
+    <hour>22</hour>
+    <minutes>11</minutes>
+  </pair5start>
+  <pair5end name="endPair">
+    <hour>11</hour>
+    <minutes>11</minutes>
+  </pair5end>
+  <pair6start name="startPair">
+    <hour>22</hour>
+    <minutes>11</minutes>
+  </pair6start>
+  <pair6end name="endPair">
+    <hour>11</hour>
+    <minutes>11</minutes>
+  </pair6end>
+  <pair7start name="startPair">
+    <hour>22</hour>
+    <minutes>11</minutes>
+  </pair7start>
+  <pair7end name="endPair">
+    <hour>11</hour>
+    <minutes>11</minutes>
+  </pair7end>
+</Schedule>

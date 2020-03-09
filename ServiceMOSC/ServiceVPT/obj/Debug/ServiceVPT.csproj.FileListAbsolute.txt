@@ -1,0 +1,9 @@
+C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe.config
+C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.pdb
+C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\obj\Debug\ServiceVPT.csprojAssemblyReference.cache
+C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\obj\Debug\ServiceVPT.csproj.CoreCompileInputs.cache
+C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\obj\Debug\ServiceVPT.exe
+C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\obj\Debug\ServiceVPT.pdb
+C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\obj\Debug\ServiceVPT.Installer1.resources
+C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\obj\Debug\ServiceVPT.csproj.GenerateResource.cache

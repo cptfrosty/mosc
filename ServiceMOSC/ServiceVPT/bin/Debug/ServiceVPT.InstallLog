@@ -1,0 +1,381 @@
+﻿Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe.
+Выполняется фиксация сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe.
+Удалите файл InstallState, поскольку отсутствуют программы установки.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe.
+Выполняется фиксация сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe.
+Удалите файл InstallState, поскольку отсутствуют программы установки.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe.
+Выполняется фиксация сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe.
+Удалите файл InstallState, поскольку отсутствуют программы установки.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Служба ServiceVPT успешно установлена.
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется откат для сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Восстанавливается исходное состояние журнала событий для источника ServiceVPT.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется откат для сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Восстанавливается исходное состояние журнала событий для источника ServiceVPT.
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+Выполняется удаление службы ServiceVPT из системы...
+Служба ServiceVPT успешно удалена из системы.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Служба ServiceVPT успешно установлена.
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+Выполняется удаление службы ServiceVPT из системы...
+Служба ServiceVPT успешно удалена из системы.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Служба ServiceVPT успешно установлена.
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+При выполнении программы установки System.Diagnostics.EventLogInstaller во время установки возникло исключение.
+System.Security.SecurityException: Запрошенный доступ к реестру запрещен.
+При удалении из системы возникло исключение. Это исключение будет проигнорировано, и удаление из системы будет продолжено. Однако после завершения удаления данное приложение может оказаться не полностью удаленным.
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+Выполняется удаление службы ServiceVPT из системы...
+Служба ServiceVPT успешно удалена из системы.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется откат для сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Восстанавливается исходное состояние журнала событий для источника ServiceVPT.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Служба ServiceVPT успешно установлена.
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+Выполняется удаление службы ServiceVPT из системы...
+Служба ServiceVPT успешно удалена из системы.
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+Предупреждение. Источник ServiceVPT не зарегистрирован на локальном компьютере.
+Выполняется удаление службы ServiceVPT из системы...
+Служба ServiceVPT успешно удалена из системы.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется откат для сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Восстанавливается исходное состояние журнала событий для источника ServiceVPT.
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+Предупреждение. Источник ServiceVPT не зарегистрирован на локальном компьютере.
+Выполняется удаление службы ServiceVPT из системы...
+Служба ServiceVPT успешно удалена из системы.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Служба ServiceVPT успешно установлена.
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+Выполняется удаление службы ServiceVPT из системы...
+Служба ServiceVPT успешно удалена из системы.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется откат для сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Восстанавливается исходное состояние журнала событий для источника ServiceVPT.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Служба ServiceVPT успешно установлена.
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+Выполняется удаление службы ServiceVPT из системы...
+Служба ServiceVPT успешно удалена из системы.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Служба ServiceVPT успешно установлена.
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+Выполняется удаление службы ServiceVPT из системы...
+Служба ServiceVPT успешно удалена из системы.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Служба ServiceVPT успешно установлена.
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+Выполняется удаление службы ServiceVPT из системы...
+Служба ServiceVPT успешно удалена из системы.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Служба ServiceVPT успешно установлена.
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+Выполняется удаление службы ServiceVPT из системы...
+Служба ServiceVPT успешно удалена из системы.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Служба ServiceVPT успешно установлена.
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+При выполнении программы установки System.Diagnostics.EventLogInstaller во время установки возникло исключение.
+System.Security.SecurityException: Запрошенный доступ к реестру запрещен.
+При удалении из системы возникло исключение. Это исключение будет проигнорировано, и удаление из системы будет продолжено. Однако после завершения удаления данное приложение может оказаться не полностью удаленным.
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+Выполняется удаление службы ServiceVPT из системы...
+Служба ServiceVPT успешно удалена из системы.
+Выполняется установка сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Устанавливается служба ServiceVPT...
+Служба ServiceVPT успешно установлена.
+Создается исходный EventLog ServiceVPT в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+При выполнении программы установки System.Diagnostics.EventLogInstaller во время установки возникло исключение.
+System.Security.SecurityException: Запрошенный доступ к реестру запрещен.
+При удалении из системы возникло исключение. Это исключение будет проигнорировано, и удаление из системы будет продолжено. Однако после завершения удаления данное приложение может оказаться не полностью удаленным.
+Выполняется удаление сборки 'C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.InstallLog
+   assemblypath = C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\ServiceVPT.exe
+Выполняется удаление источника EventLog ServiceVPT.
+Выполняется удаление службы ServiceVPT из системы...
+Служба ServiceVPT успешно удалена из системы.
+Попытка останова службы ServiceVPT.
