@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace VPT_CALL_TO_CLASS
+namespace MOSC
 {
 
     class GlobalSetting
@@ -18,9 +18,48 @@ namespace VPT_CALL_TO_CLASS
          * 3 - Profile 2
          * 4 - Profile 3
          */
-        public static int LessonScheduleNowID = 0; //Расписание которое работает сейчас
+        //Профили расписания
+        public enum TypeScheduleActive {MainSchedule, ReducedSchedule, Profile1, Profile2, Profile3 };
+        public static TypeScheduleActive TypeScheduleNow = TypeScheduleActive.MainSchedule;
+
+        /// <summary>
+        /// Получить активный профиль
+        /// </summary>
+        /// <returns>Возвращает активный профиль</returns>
+        public static TypeScheduleActive GetTypeScheduleActive()
+        {
+            return TypeScheduleNow;
+        }
+
+        /// <summary>
+        /// Получить название файла взависимости от активного профиля
+        /// </summary>
+        /// <returns></returns>
+        public static string GetTypeScheduleActiveToFile()
+        {
+            string nameFile = "";
+            switch (TypeScheduleNow)
+            {
+                case TypeScheduleActive.MainSchedule: nameFile = "Default"; break;
+                case TypeScheduleActive.ReducedSchedule: nameFile = "Reduced"; break;
+                case TypeScheduleActive.Profile1: nameFile = "P1"; break;
+                case TypeScheduleActive.Profile2: nameFile = "P2"; break;
+                case TypeScheduleActive.Profile3: nameFile = "P3"; break;
+            }
+            return nameFile;
+        }
+
+        /// <summary>
+        /// Директория пути
+        /// </summary>
+        public static string Path = AppDomain.CurrentDomain.BaseDirectory;
+
+
+
+        //----------------------------------------------------------------------//
+        
         public static List<Task> task = new List<Task>(); //Список всех звонков
-        public static DateTime nextCall; //Следующий звонок
+        
 
         /// <summary>
         /// Статус работы службы

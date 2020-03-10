@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace VPT_CALL_TO_CLASS
+namespace MOSK
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml

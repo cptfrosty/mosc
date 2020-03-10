@@ -8,7 +8,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VPT_CALL_TO_CLASS
+namespace MOSK
 {
     partial class call_to_class : ServiceBase
     {

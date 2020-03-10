@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace VPT_CALL_TO_CLASS
+namespace MOSC
 {
     /// <summary>
     /// Логика взаимодействия для SettingService.xaml
@@ -22,7 +22,7 @@ namespace VPT_CALL_TO_CLASS
         public SettingService()
         {
             InitializeComponent();
-            Schedule.ParseXML();
+            Schedule.Start();
         }
 
         private void btnGeneral_Click(object sender, RoutedEventArgs e)

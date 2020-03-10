@@ -13,17 +13,13 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace VPT_CALL_TO_CLASS
+namespace MOSC
 {
     /// <summary>
     /// Логика взаимодействия для PageGeneral.xaml
     /// </summary>
     public partial class PageGeneral : Page
     {
-        System.ServiceProcess.ServiceController service = new System.ServiceProcess.ServiceController("ServiceVPT");
-
-
-
         public PageGeneral()
         {
             InitializeComponent();
@@ -39,28 +35,11 @@ namespace VPT_CALL_TO_CLASS
             var timer = new System.Windows.Threading.DispatcherTimer();
             timer.Interval = new TimeSpan(0, 0, 1);
             timer.IsEnabled = true;
-            timer.Tick += (o, e) => { timeNow.Text = "Время сейчас: " + DateTime.Now.ToString(); };
+            timer.Tick += (o, e) => {
+                timeNow.Text = "Время сейчас: " + DateTime.Now.ToString();
+                sheduleNext.Text = Schedule.NextCall.Hour + " : " + Schedule.NextCall.Minute;
+            };
             timer.Start();
-        }
-
-        /// <summary>
-        /// Остановить службу
-        /// </summary>
-        void ServiceStop()
-        {
-            service.Stop();
-            infoService.Foreground = Brushes.Red;
-            infoService.Text = "Служба не работает";
-            btnRunService.IsEnabled = true;
-
-        }
-
-        void ServiceStart()
-        {
-            service.Start();
-            infoService.Foreground = Brushes.Green;
-            infoService.Text = "Служба работает";
-            btnOffService.IsEnabled = true;
         }
 
         /// <summary>
@@ -68,16 +47,16 @@ namespace VPT_CALL_TO_CLASS
         /// </summary>
         public void LoadPageInfo()
         {
-            System.ServiceProcess.ServiceController servCheck = System.ServiceProcess.ServiceController.GetServices().FirstOrDefault(s => s.ServiceName == "ServiceVPT");
-            if (servCheck != null)
+
+            if (ServiceController.CheckAvailability())
             {
 
                 //Если служба остановлена, то передаём глобальное значение
-                if (service.Status == System.ServiceProcess.ServiceControllerStatus.Stopped)
+                if (!ServiceController.GetStatus())
                 {
                     GlobalSetting.isService = false;
                 }
-                else if (service.Status == System.ServiceProcess.ServiceControllerStatus.Running)
+                else if (ServiceController.GetStatus())
                 {
                     GlobalSetting.isService = true;
                 }
@@ -103,7 +82,7 @@ namespace VPT_CALL_TO_CLASS
         public void SetPageInfo()
         {
             //Если служба работает
-            if (service.Status == System.ServiceProcess.ServiceControllerStatus.Running)
+            if (ServiceController.GetStatus())
             {
                 infoService.Foreground = Brushes.Green;
                 infoService.Text = "Служба работает";
@@ -130,7 +109,12 @@ namespace VPT_CALL_TO_CLASS
         {
             btnOffService.IsEnabled = false;
             btnRunService.IsEnabled = false;
-            ServiceStop(); 
+
+            ServiceController.ServiceStop();
+
+            infoService.Foreground = Brushes.Red;
+            infoService.Text = "Служба не работает";
+            btnRunService.IsEnabled = true;
         }
 
         /// <summary>
@@ -142,7 +126,12 @@ namespace VPT_CALL_TO_CLASS
         {
             btnOffService.IsEnabled = false;
             btnRunService.IsEnabled = false;
-            ServiceStart();
+
+            ServiceController.ServiceStart();
+
+            infoService.Foreground = Brushes.Green;
+            infoService.Text = "Служба работает";
+            btnOffService.IsEnabled = true;
         }
     }
 }

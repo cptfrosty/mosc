@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VPT_CALL_TO_CLASS
+namespace MOSC
 {
     class Lesson
     {

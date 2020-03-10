@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 using System.IO;
 using System.Xml.Linq;
 
-namespace VPT_CALL_TO_CLASS
+namespace MOSC
 {
     /// <summary>
     /// Логика взаимодействия для PageSettingSchedule.xaml

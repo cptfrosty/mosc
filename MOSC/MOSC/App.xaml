@@ -1,7 +1,7 @@
-﻿<Application x:Class="VPT_CALL_TO_CLASS.App"
+﻿<Application x:Class="MOSC.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:VPT_CALL_TO_CLASS"
+             xmlns:local="clr-namespace:MOSC"
              StartupUri="SettingService.xaml">
     <Application.Resources>
          

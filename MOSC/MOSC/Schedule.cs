@@ -5,31 +5,76 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace VPT_CALL_TO_CLASS
+namespace MOSC
 {
     /// <summary>
     /// Расписание
     /// </summary>
     class Schedule
     {
-        public enum TypePair { Start, end };
-
         public static List<Lesson> lessons = new List<Lesson>();
-        public static TypePair typePair;
         /// <summary>
         /// Время следующего звонка
         /// </summary>
-        public static DateTime nextCall;
+        public static DateTime NextCall;
+        public static bool startLesson = false;
+        private static bool isChange = false; //Проверяет, изменено ли время на новое или нет.
 
-        
+        /// <summary>
+        /// Проверяет изменение по времени и следующего звонка
+        /// </summary>
+        public static void CheckNextCall()
+        {
+            NextCall = lessons[0].startLesson;
+            var timer = new System.Windows.Threading.DispatcherTimer();
+            timer.Interval = new TimeSpan(0, 0, 1);
+            timer.IsEnabled = true;
+            timer.Tick += (o, e) => {
+                if (NextCall.Hour <= DateTime.Now.Hour && NextCall.Minute < DateTime.Now.Minute)
+                {
+                    for (int i = lessons.Count-1; i >= 0; i--)
+                    {
+                        if(lessons[i].endLesson.Hour >= DateTime.Now.Hour && lessons[i].endLesson.Minute > DateTime.Now.Minute)
+                        {
+                            NextCall = lessons[i].endLesson;
+                            startLesson = false;
+                            isChange = true;
+                        }
+
+                        if (lessons[i].startLesson.Hour >= DateTime.Now.Hour && lessons[i].startLesson.Minute > DateTime.Now.Minute)
+                        {
+                            NextCall = lessons[i].startLesson;
+                            startLesson = true;
+                            isChange = true;
+                        }
+                    }
+                    //Если изменение не произошло, значит все пары закончились
+                    //И мы присваиваем ему самое первое значение
+                    if (!isChange)
+                    {
+                        NextCall = lessons[0].startLesson;
+                    }
+                }
+            };
+            timer.Start();
+        }
+
+        /// <summary>
+        /// Класс расписание начинает собирать информацию;
+        /// </summary>
+        public static void Start()
+        {
+            ParseXMLToList();
+            CheckNextCall();
+        }
 
         /// <summary>
         /// Заполнить расписание
         /// </summary>
-        public static void ParseXML()
+        public static void ParseXMLToList()
         {
-            //XDocument xdoc = XDocument.Load(GlobalSetting.Path + @"\shedule\" + "DefaulTest");
-            XDocument xdoc = XDocument.Load(@"C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\schedule\DefaultTest");
+            XDocument xdoc = XDocument.Load(GlobalSetting.Path + @"\schedule\" + GlobalSetting.GetTypeScheduleActiveToFile());
+            //XDocument xdoc = XDocument.Load(@"C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\schedule\DefaultTest");
             foreach (XElement LessonElement in xdoc.Element("Schedule").Elements("pair"))
             {
                 Lesson lesson = new Lesson();

@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace VPT_CALL_TO_CLASS
+namespace MOSC
 {
     /// <summary>
     /// Логика взаимодействия для PageTask.xaml
