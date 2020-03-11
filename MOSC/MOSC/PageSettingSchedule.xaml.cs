@@ -22,13 +22,6 @@ namespace MOSC
     /// </summary>
     public partial class PageSettingSchedule : Page
     {
-        /// <summary>
-        /// mainSchedule - основное расписание
-        /// reducedSchedule - сокращённое расписание
-        /// </summary>
-        public enum TypeSchedule {mainSchedule, reducedSchedule, profile1, profile2, profile3}
-        public TypeSchedule typeSchedule = TypeSchedule.mainSchedule;
-
         public PageSettingSchedule()
         {
             InitializeComponent();
@@ -148,79 +141,62 @@ namespace MOSC
             XElement endMinuteElem = new XElement("Часы", endHourPair);*/
 
             XDocument xdoc = new XDocument(new XElement("Schedule",
-                new XElement("pair0start",
-                    new XAttribute("name", "startPair"),
-                    new XElement("hour", Pairs0Hours.Text),
-                    new XElement("minutes", Pairs0Minutes.Text)),
-                new XElement("pair0end",
-                    new XAttribute("name", "endPair"),
-                    new XElement("hour", EndPairs0Hours.Text),
-                    new XElement("minutes", EndPairs0Minutes.Text)),
+                new XElement("pair",
+                    new XAttribute("name", "Pair0"),
+                    new XElement("StartHour", Pairs0Hours.Text),
+                    new XElement("StartMinutes", Pairs0Minutes.Text),
+                    new XElement("EndHour", EndPairs0Hours.Text),
+                    new XElement("EndMinutes", EndPairs0Minutes.Text)),
 
-               new XElement("pair1start",
-                    new XAttribute("name", "startPair"),
-                    new XElement("hour", Pairs1Hours.Text),
-                    new XElement("minutes", Pairs1Minutes.Text)),
-                new XElement("pair1end",
-                    new XAttribute("name", "endPair"),
-                    new XElement("hour", EndPairs1Hours.Text),
-                    new XElement("minutes", EndPairs1Minutes.Text)),
+                new XElement("pair",
+                    new XAttribute("name", "Pair1"),
+                    new XElement("StartHour", Pairs1Hours.Text),
+                    new XElement("StartMinutes", Pairs1Minutes.Text),
+                    new XElement("EndHour", EndPairs1Hours.Text),
+                    new XElement("EndMinutes", EndPairs1Minutes.Text)),
 
-                new XElement("pair2start",
-                    new XAttribute("name", "startPair"),
-                    new XElement("hour", Pairs2Hours.Text),
-                    new XElement("minutes", Pairs2Minutes.Text)),
-                new XElement("pair2end",
-                    new XAttribute("name", "endPair"),
-                    new XElement("hour", EndPairs2Hours.Text),
-                    new XElement("minutes", EndPairs2Minutes.Text)),
+                new XElement("pair",
+                    new XAttribute("name", "Pair2"),
+                    new XElement("StartHour", Pairs2Hours.Text),
+                    new XElement("StartMinutes", Pairs2Minutes.Text),
+                    new XElement("EndHour", EndPairs2Hours.Text),
+                    new XElement("EndMinutes", EndPairs2Minutes.Text)),
 
-                new XElement("pair3start",
-                    new XAttribute("name", "startPair"),
-                    new XElement("hour", Pairs3Hours.Text),
-                    new XElement("minutes", Pairs3Minutes.Text)),
-                new XElement("pair3end",
-                    new XAttribute("name", "endPair"),
-                    new XElement("hour", EndPairs3Hours.Text),
-                    new XElement("minutes", EndPairs3Minutes.Text)),
+                new XElement("pair",
+                    new XAttribute("name", "Pair3"),
+                    new XElement("StartHour", Pairs3Hours.Text),
+                    new XElement("StartMinutes", Pairs3Minutes.Text),
+                    new XElement("EndHour", EndPairs3Hours.Text),
+                    new XElement("EndMinutes", EndPairs3Minutes.Text)),
 
-                new XElement("pair4start",
-                    new XAttribute("name", "startPair"),
-                    new XElement("hour", Pairs4Hours.Text),
-                    new XElement("minutes", Pairs4Minutes.Text)),
-                new XElement("pair4end",
-                    new XAttribute("name", "endPair"),
-                    new XElement("hour", EndPairs4Hours.Text),
-                    new XElement("minutes", EndPairs4Minutes.Text)),
+                new XElement("pair",
+                    new XAttribute("name", "Pair4"),
+                    new XElement("StartHour", Pairs4Hours.Text),
+                    new XElement("StartMinutes", Pairs4Minutes.Text),
+                    new XElement("EndHour", EndPairs4Hours.Text),
+                    new XElement("EndMinutes", EndPairs4Minutes.Text)),
 
-                new XElement("pair5start",
-                    new XAttribute("name", "startPair"),
-                    new XElement("hour", Pairs5Hours.Text),
-                    new XElement("minutes", Pairs5Minutes.Text)),
-                new XElement("pair5end",
-                    new XAttribute("name", "endPair"),
-                    new XElement("hour", EndPairs5Hours.Text),
-                    new XElement("minutes", EndPairs5Minutes.Text)),
+                new XElement("pair",
+                    new XAttribute("name", "Pair5"),
+                    new XElement("StartHour", Pairs5Hours.Text),
+                    new XElement("StartMinutes", Pairs5Minutes.Text),
+                    new XElement("EndHour", EndPairs5Hours.Text),
+                    new XElement("EndMinutes", EndPairs5Minutes.Text)),
 
-                new XElement("pair6start",
-                    new XAttribute("name", "startPair"),
-                    new XElement("hour", Pairs6Hours.Text),
-                    new XElement("minutes", Pairs6Minutes.Text)),
-                new XElement("pair6end",
-                    new XAttribute("name", "endPair"),
-                    new XElement("hour", EndPairs6Hours.Text),
-                    new XElement("minutes", EndPairs6Minutes.Text)),
+                new XElement("pair",
+                    new XAttribute("name", "Pair6"),
+                    new XElement("StartHour", Pairs6Hours.Text),
+                    new XElement("StartMinutes", Pairs6Minutes.Text),
+                    new XElement("EndHour", EndPairs6Hours.Text),
+                    new XElement("EndMinutes", EndPairs6Minutes.Text)),
 
-                new XElement("pair7start",
-                    new XAttribute("name", "startPair"),
-                    new XElement("hour", Pairs7Hours.Text),
-                    new XElement("minutes", Pairs7Minutes.Text)),
-                new XElement("pair7end",
-                    new XAttribute("name", "endPair"),
-                    new XElement("hour", EndPairs7Hours.Text),
-                    new XElement("minutes", EndPairs7Minutes.Text))
-                    )
-                    );
+                new XElement("pair",
+                    new XAttribute("name", "Pair7"),
+                    new XElement("StartHour", Pairs7Hours.Text),
+                    new XElement("StartMinutes", Pairs7Minutes.Text),
+                    new XElement("EndHour", EndPairs7Hours.Text),
+                    new XElement("EndMinutes", EndPairs7Minutes.Text))
+                ));
 
             //Путь к сохранению
             string path = $@"{Environment.CurrentDirectory}\schedule";
@@ -232,7 +208,7 @@ namespace MOSC
             if (!dirInfo.Exists) dirInfo.Create();
 
             //Сохранить документ
-            xdoc.Save($@"{path}\Default");
+            xdoc.Save($@"{path}\");
 
             //Информация пользователю об успешном сохранении
             ErrorShow.Foreground = Brushes.Green;
@@ -271,27 +247,8 @@ namespace MOSC
 
         void LoadToFileScheduleXML()
         {
-            string path = $@"{Environment.CurrentDirectory}\schedule";
-            //Проверка пути
-            switch (typeSchedule)
-            {
-                case TypeSchedule.mainSchedule:
-                    path = $@"{path}\Default";
-                    
-                    break;
-                case TypeSchedule.reducedSchedule:
-                    path = $@"{path}\Reduced";
-                    break;
-                case TypeSchedule.profile1:
-                    path = $@"{path}\Profile1";
-                    break;
-                case TypeSchedule.profile2:
-                    path = $@"{path}\Profile2";
-                    break;
-                case TypeSchedule.profile3:
-                    path = $@"{path}\Profile3";
-                    break;
-            }
+            string path = $@"{Environment.CurrentDirectory}\schedule\{GlobalSetting.GetTypeScheduleActiveToFile()}";
+            
 
             //Путь к загрузке
             
@@ -345,22 +302,32 @@ namespace MOSC
 
 
             //Заполнение полей (Часы и минуты начала)
-            for (int i = 0; i < textBoxStart.Length; i++)
+            /*for (int i = 0; i < textBoxStart.Length; i=i+2)
             {
-                string textPair = "pair" + countPair + "start";
-                textBoxStart[i].Text = xdoc.Element("Schedule").Element(textPair).Element("hour").Value;
-                textBoxStart[++i].Text = xdoc.Element("Schedule").Element(textPair).Element("minutes").Value;
-                countPair++;
-            }
+                string textPair = "pair";
+                textBoxStart[i].Text = xdoc.Element("Schedule").Elements(textPair).Element("StartHour").Value;
+                textBoxStart[i+1].Text = xdoc.Element("Schedule").Element(textPair).Element("StartMinutes").Value;
 
-            countPair = 0; //Обнуление счётчика пар
-            //Заполнение полей (Часы и минуты конца)
-            for (int i = 0; i < textBoxEnd.Length; i++)
-            {
-                string textPair = "pair" + countPair + "end";
-                textBoxEnd[i].Text = xdoc.Element("Schedule").Element(textPair).Element("hour").Value;
-                textBoxEnd[++i].Text = xdoc.Element("Schedule").Element(textPair).Element("minutes").Value;
+                textBoxEnd[i].Text = xdoc.Element("Schedule").Element(textPair).Element("EndHour").Value;
+                textBoxEnd[i+1].Text = xdoc.Element("Schedule").Element(textPair).Element("EndHour").Value;
+
                 countPair++;
+            }*/
+
+            foreach(XElement element in xdoc.Element("Schedule").Elements("pair"))
+            {
+                XElement startHour = element.Element("StartHour");
+                XElement startMinutes = element.Element("StartMinutes");
+                XElement endHour = element.Element("EndHour");
+                XElement endMinutes = element.Element("EndMinutes");
+
+                textBoxStart[countPair].Text = int.Parse(startHour.Value).ToString();
+                textBoxStart[countPair+1].Text = int.Parse(startMinutes.Value).ToString();
+
+                textBoxEnd[countPair].Text = int.Parse(endHour.Value).ToString();
+                textBoxEnd[countPair + 1].Text = int.Parse(endMinutes.Value).ToString();
+
+                countPair= countPair + 2;
             }
         }
 
@@ -374,26 +341,32 @@ namespace MOSC
             switch (NowUsedType.Text)
             {
                 case "Осн. расписание":
-                    typeSchedule = TypeSchedule.mainSchedule;
+                    GlobalSetting.TypeScheduleNow = GlobalSetting.TypeScheduleActive.MainSchedule;
                     LoadToFileScheduleXML();
                     break;
                 case "Сокр. расписание":
-                    typeSchedule = TypeSchedule.reducedSchedule;
+                    GlobalSetting.TypeScheduleNow = GlobalSetting.TypeScheduleActive.ReducedSchedule;
                     LoadToFileScheduleXML();
                     break;
                 case "Profile1":
-                    typeSchedule = TypeSchedule.profile1;
+                    GlobalSetting.TypeScheduleNow = GlobalSetting.TypeScheduleActive.Profile1;
                     LoadToFileScheduleXML();
                     break;
                 case "Profile2":
-                    typeSchedule = TypeSchedule.profile2;
+                    GlobalSetting.TypeScheduleNow = GlobalSetting.TypeScheduleActive.Profile2;
                     LoadToFileScheduleXML();
                     break;
                 case "Profile3":
-                    typeSchedule = TypeSchedule.profile3;
+                    GlobalSetting.TypeScheduleNow = GlobalSetting.TypeScheduleActive.Profile3;
                     LoadToFileScheduleXML();
                     break;
             }
+        }
+
+        private void SetSheduleNow(object sender, RoutedEventArgs e)
+        {
+            SaveToFileScheduleXML();
+
         }
     }
 }

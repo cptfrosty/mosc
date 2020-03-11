@@ -22,6 +22,16 @@ namespace MOSC
         public enum TypeScheduleActive {MainSchedule, ReducedSchedule, Profile1, Profile2, Profile3 };
         public static TypeScheduleActive TypeScheduleNow = TypeScheduleActive.MainSchedule;
 
+        //Путь музыки
+        public static string pathMusicStartPair = "";
+        public static string pathMusicForFiveMinutesStartPair = "";
+        public static string pathMusicEndPair = "";
+        public static string pathMusicForFiveMinutesEndPair = "";
+
+        //Путь к расписанию для службы 
+        public static string pathForScheadule = "";
+
+
         /// <summary>
         /// Получить активный профиль
         /// </summary>
@@ -54,7 +64,64 @@ namespace MOSC
         /// </summary>
         public static string Path = AppDomain.CurrentDomain.BaseDirectory;
 
+        public static void SaveGlobalSettigs()
+        {
+            XDocument xdoc = new XDocument(new XElement("Setting", 
+                new XElement("TypeSheduleNow", TypeScheduleNow),
+                new XElement("PathMusicStartPair", pathMusicStartPair),
+                new XElement("pathMusicEndPair", pathMusicEndPair),
+                new XElement("pathMusicForFiveMinutesEndPair", pathMusicForFiveMinutesEndPair)
+                ));
 
+
+            string path = $@"{Environment.CurrentDirectory}\setting\setting";
+
+            //Создать путь к директории
+            DirectoryInfo dirInfo = new DirectoryInfo(path);
+
+            //Если путь к директории отсутствует (не хватает папок), то создать их
+            if (!dirInfo.Exists) dirInfo.Create();
+
+            //Сохранить документ
+            xdoc.Save($@"{path}\");
+
+        }
+
+        public static void LoadGlobalSettings()
+        {
+            string path = $@"{Environment.CurrentDirectory}\setting\setting";
+
+            //Путь к загрузке
+
+            //Создать путь к директории
+            FileInfo fileInfo = new FileInfo(path);
+
+            XDocument xdoc = null;
+
+            //Если данный путь существует
+            if (fileInfo.Exists)
+            {
+                xdoc = XDocument.Load($@"{path}");
+            }
+            else
+            {
+                return;
+            }
+
+            //Определение сохранённого основного расписания
+            switch (xdoc.Element("Setting").Element("TypeSheduleNow").Value)
+            {
+                case "MainSchedule": TypeScheduleNow = TypeScheduleActive.MainSchedule; break;
+                case "ReducedSchedule": TypeScheduleNow = TypeScheduleActive.ReducedSchedule; break;
+                case "Profile1": TypeScheduleNow = TypeScheduleActive.Profile1; break;
+                case "Profile2": TypeScheduleNow = TypeScheduleActive.Profile2; break;
+                case "Profile3": TypeScheduleNow = TypeScheduleActive.Profile3; break;
+            }
+
+            pathMusicStartPair = xdoc.Element("Setting").Element("PathMusicStartPair").Value;
+            pathMusicEndPair = xdoc.Element("Setting").Element("PathMusicEndPair").Value;
+            pathMusicForFiveMinutesEndPair = xdoc.Element("Setting").Element("PathMusicForFiveMinutesEndPair").Value;
+        }
 
         //----------------------------------------------------------------------//
         

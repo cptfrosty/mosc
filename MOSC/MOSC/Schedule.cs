@@ -23,6 +23,7 @@ namespace MOSC
         /// <summary>
         /// Проверяет изменение по времени и следующего звонка
         /// </summary>
+        /// Оставить на потом
         public static void CheckNextCall()
         {
             NextCall = lessons[0].startLesson;

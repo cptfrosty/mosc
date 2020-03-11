@@ -152,6 +152,7 @@
                     <TextBlock  Grid.Row ="7" Grid.Column="10"  Text="ч/мин" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Margin="6,11,5,11" Width="34"/>
                 </Grid>
             </GroupBox>
+            <Button Content="Использовать" Width="150" Height="30" Canvas.Left="195" Canvas.Top="423" Click="SetSheduleNow"/>
         </Canvas>
     </Grid>
 </Page>
