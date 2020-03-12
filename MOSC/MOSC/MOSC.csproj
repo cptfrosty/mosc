@@ -77,6 +77,9 @@
     <Compile Include="PageGeneral.xaml.cs">
       <DependentUpon>PageGeneral.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PageResources.xaml.cs">
+      <DependentUpon>PageResources.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageSettingSchedule.xaml.cs">
       <DependentUpon>PageSettingSchedule.xaml</DependentUpon>
     </Compile>
@@ -107,6 +110,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="PageGeneral.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageResources.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

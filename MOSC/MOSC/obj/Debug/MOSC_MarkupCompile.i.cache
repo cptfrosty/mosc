@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Project\Git\MOSC-\mosc\MOSC\MOSC\obj\Debug\
+D:\projects\VisualStudio\MOSC\mosc\MOSC\MOSC\obj\Debug\
 MOSC
 none
 false
 DEBUG;TRACE
-D:\Project\Git\MOSC-\mosc\MOSC\MOSC\App.xaml
-5-414496655
+D:\projects\VisualStudio\MOSC\mosc\MOSC\MOSC\App.xaml
+6-1622746166
 
-19-1234715682
+17-250767650
 1551615062
-MainWindow.xaml;PageGeneral.xaml;PageSettingSchedule.xaml;PageTask.xaml;SettingService.xaml;
+MainWindow.xaml;PageGeneral.xaml;PageResources.xaml;PageSettingSchedule.xaml;PageTask.xaml;SettingService.xaml;
 
-False
+True
 

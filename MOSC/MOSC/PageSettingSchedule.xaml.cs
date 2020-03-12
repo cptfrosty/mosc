@@ -208,7 +208,7 @@ namespace MOSC
             if (!dirInfo.Exists) dirInfo.Create();
 
             //Сохранить документ
-            xdoc.Save($@"{path}\");
+            xdoc.Save($@"{path}\MainSchedule");
 
             //Информация пользователю об успешном сохранении
             ErrorShow.Foreground = Brushes.Green;
