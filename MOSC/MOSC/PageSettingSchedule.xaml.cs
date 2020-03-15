@@ -366,7 +366,6 @@ namespace MOSC
         private void SetSheduleNow(object sender, RoutedEventArgs e)
         {
             SaveToFileScheduleXML();
-
         }
     }
 }

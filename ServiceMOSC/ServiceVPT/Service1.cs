@@ -25,9 +25,9 @@ namespace ServiceVPT
 
         protected override void OnStart(string[] args)
         {
+            GlobalSetting.LoadSetting();
             LoadSound();
             GlobalSetting.IsStartLesson = false;
-            GlobalSetting.LoadPath();
             Schedule.ParceLesson();
             TimerUpdate();
         }
@@ -39,7 +39,7 @@ namespace ServiceVPT
 
         public void LoadSound()
         {
-            sound.SoundLocation = @"D:\sound\Sound2.wav";
+            sound.SoundLocation = GlobalSetting.PathMusicStartPair;
             sound.Load();
         }
 
@@ -63,21 +63,29 @@ namespace ServiceVPT
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
             if (!GlobalSetting.IsStartLesson) {
-                if (Schedule.lessons[GlobalSetting.LessonCounter].startLesson.Hour == DateTime.Now.Hour && 
-                    Schedule.lessons[GlobalSetting.LessonCounter].startLesson.Minute == DateTime.Now.Minute)
+                for (int i = 0; i < Schedule.lessons.Count; i++)
                 {
-                    PlaySound();
-                    GlobalSetting.IsStartLesson = true;
+                    if (Schedule.lessons[i].startLesson.Hour == DateTime.Now.Hour &&
+                        Schedule.lessons[i].startLesson.Minute == DateTime.Now.Minute)
+                    {
+                        PlaySound();
+                        GlobalSetting.IsStartLesson = true;
+                    }
+                    //Logs.CreateLog(Schedule.lessons[i].startLesson.Hour.ToString());
                 }
             }
             else
             {
-                if (Schedule.lessons[GlobalSetting.LessonCounter].endLesson.Hour == DateTime.Now.Hour &&
-                    Schedule.lessons[GlobalSetting.LessonCounter].endLesson.Minute == DateTime.Now.Minute)
+                for (int i = 0; i < Schedule.lessons.Count; i++)
                 {
-                    PlaySound();
-                    GlobalSetting.LessonCompleted();
-                    GlobalSetting.IsStartLesson = false;
+                    if (Schedule.lessons[GlobalSetting.LessonCounter].endLesson.Hour == DateTime.Now.Hour &&
+                    Schedule.lessons[GlobalSetting.LessonCounter].endLesson.Minute == DateTime.Now.Minute)
+                    {
+                        PlaySound();
+                        GlobalSetting.LessonCompleted();
+                        GlobalSetting.IsStartLesson = false;
+                    }
+                    //Logs.CreateLog("FALSE:" + Schedule.lessons[i].startLesson.Hour.ToString());
                 }
             }
 

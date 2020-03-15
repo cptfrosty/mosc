@@ -12,7 +12,8 @@ namespace MOSC
 
         public static bool GetStatus()
         {
-            if(service.Status == System.ServiceProcess.ServiceControllerStatus.Running)
+            service = new System.ServiceProcess.ServiceController("ServiceVPT");
+            if (service.Status == System.ServiceProcess.ServiceControllerStatus.Running)
             {
                 return true;
             }

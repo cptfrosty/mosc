@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace ServiceVPT
 {
@@ -18,10 +19,24 @@ namespace ServiceVPT
 
         public static string ProfileNow = ""; //Профиль звонков, который используется сейчас
 
-        //Определить где находится служба
-        public static void LoadPath()
+        public static string PathTypeSheduleNow;
+        public static string PathMusicForFiveMinutesStartPair;
+        public static string PathMusicStartPair;
+        public static string PathMusicEndPair;
+        public static string PathMusicForFiveMinutesEndPair;
+
+
+        //Загрузить настройки службы
+        public static void LoadSetting()
         {
-            Path = Application.StartupPath;
+            string path = AppDomain.CurrentDomain.BaseDirectory + @"\setting\setting_s";
+            XDocument xdoc = XDocument.Load(path);
+            PathTypeSheduleNow = xdoc.Element("Setting").Element("TypeSheduleNow").Value;
+
+            PathMusicStartPair = xdoc.Element("Setting").Element("PathMusicStartPair").Value;
+            PathMusicForFiveMinutesStartPair = xdoc.Element("Setting").Element("PathMusicForFiveMinutesStartPair").Value;
+            PathMusicEndPair = xdoc.Element("Setting").Element("PathMusicEndPair").Value;
+            PathMusicForFiveMinutesEndPair = xdoc.Element("Setting").Element("PathMusicForFiveMinutesEndPair").Value;
         }
 
         /// <summary>

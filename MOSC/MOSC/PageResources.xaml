@@ -6,25 +6,28 @@
       xmlns:local="clr-namespace:MOSC"
       mc:Ignorable="d" 
       d:DesignHeight="586" d:DesignWidth="526"
-      Title="PageResources">
+      Title="PageResources" Loaded="Page_Loaded">
 
     <Grid Background="White">
         <Canvas>
             <TextBlock Text="Мелодия начала пары" Canvas.Top="30" Width="99" Canvas.Left="18" TextWrapping="Wrap"/>
-            <TextBox Height="32" Width="331" Canvas.Left="122" Canvas.Top="30"/>
-            <Button Width="58" Height="32" Canvas.Left="458" Canvas.Top="30" Content="Путь"/>
+            <TextBox x:Name="tbPathStartSoundPair" Height="32" Width="331" Canvas.Left="122" Canvas.Top="30"/>
+            <Button x:Name="btnPathStartSoundPair" Width="58" Height="32" Canvas.Left="458" Canvas.Top="30" Content="Путь" Click="btnPathStartSoundPair_Click"/>
 
             <TextBlock Text="Мелодия начала пары за 5 минут" Canvas.Top="78" Width="99" Canvas.Left="18" TextWrapping="Wrap"/>
-            <TextBox Height="32" Width="331" Canvas.Left="122" Canvas.Top="78"/>
-            <Button Width="58" Height="32" Canvas.Left="458" Canvas.Top="78" Content="Путь"/>
+            <TextBox  x:Name="tbPathStartForFiveSoundPair" Height="32" Width="331" Canvas.Left="122" Canvas.Top="78"/>
+            <Button x:Name="btnPathStartForFiveSoundPair" Width="58" Height="32" Canvas.Left="458" Canvas.Top="78" Content="Путь" Click="btnPathStartForFiveSoundPair_Click"/>
 
-            <TextBlock Text="Мелодия конца пары" Canvas.Top="127" Width="99" Canvas.Left="18" TextWrapping="Wrap"/>
-            <TextBox Height="32" Width="331" Canvas.Left="122" Canvas.Top="127"/>
-            <Button Width="58" Height="32" Canvas.Left="458" Canvas.Top="127" Content="Путь"/>
+            <TextBlock  Text="Мелодия конца пары" Canvas.Top="127" Width="99" Canvas.Left="18" TextWrapping="Wrap"/>
+            <TextBox x:Name="tbPathEndSoundPair" Height="32" Width="331" Canvas.Left="122" Canvas.Top="127"/>
+            <Button x:Name="btnPathEndSoundPair" Width="58" Height="32" Canvas.Left="458" Canvas.Top="127" Content="Путь" Click="btnPathEndSoundPair_Click"/>
 
             <TextBlock Text="Мелодия конца пары за 5 минут" Canvas.Top="174" Width="99" Canvas.Left="18" TextWrapping="Wrap"/>
-            <TextBox Height="32" Width="331" Canvas.Left="122" Canvas.Top="174" FontSize="22"/>
-            <Button Width="58" Height="32" Canvas.Left="458" Canvas.Top="174" Content="Путь"/>
+            <TextBox  x:Name="tbPathEndForFiveSoundPair" Height="32" Width="331" Canvas.Left="122" Canvas.Top="174"/>
+            <Button x:Name="btnPathEndForFiveSoundPair" Width="58" Height="32" Canvas.Left="458" Canvas.Top="174" Content="Путь" Click="btnPathEndForFiveSoundPair_Click"/>
+
+            <Button x:Name="btnSave" Width="182" Height="32" Canvas.Left="334" Canvas.Top="220" Content="Сохранить" Click="btnSave_Click"/>
+            <TextBlock x:Name="statusSave" Text="Сохранение прошло успешно" Canvas.Top="228" Width="339" Canvas.Left="18" TextWrapping="Wrap" Visibility="Hidden"/>
         </Canvas>
     </Grid>
 </Page>

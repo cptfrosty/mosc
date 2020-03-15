@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Setting>
+  <TypeSheduleNow>D:\Project\Git\MOSC-\mosc\MOSC\MOSC\bin\Debug\schedule\Default</TypeSheduleNow>
+  <PathMusicForFiveMinutesStartPair>D:\sound\Sound2.wav</PathMusicForFiveMinutesStartPair>
+  <PathMusicStartPair>D:\sound\Sound2.wav</PathMusicStartPair>
+  <PathMusicEndPair>D:\sound\Sound2.wav</PathMusicEndPair>
+  <PathMusicForFiveMinutesEndPair>D:\sound\Sound2.wav</PathMusicForFiveMinutesEndPair>
+</Setting>

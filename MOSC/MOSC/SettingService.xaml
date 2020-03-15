@@ -15,7 +15,7 @@
             <Button x:Name="btnGeneral" Content="Общее" FontSize="16" Height="50" Click="btnGeneral_Click"/>
             <Button x:Name="btnSchedule" Content="Расписание" FontSize="16" Height="50" Click="btnSchedule_Click"/>
             <Button x:Name="btnTask" Content="Задачи" FontSize="16" Height="50" Click="btnTask_Click"/>
-            <Button Content="Ресурсы" FontSize="16" Height="50"/>
+            <Button x:Name="btnResources" Content="Ресурсы" FontSize="16" Height="50" Click="btnResources_Click"/>
         </StackPanel>
 
         <Frame x:Name="pageContent" Grid.Column="1" Margin="10" NavigationUIVisibility="Hidden"/>

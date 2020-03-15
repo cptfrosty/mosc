@@ -11,7 +11,7 @@ namespace ServiceVPT
     {
         public static void CreateLog(string text)
         {
-            string path = GlobalSetting.Path + @"\Logs";
+            string path = AppDomain.CurrentDomain.BaseDirectory + @"\Logs";
             DirectoryInfo dirInfo = new DirectoryInfo(path);
 
             if (!dirInfo.Exists)

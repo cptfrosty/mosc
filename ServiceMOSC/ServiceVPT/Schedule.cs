@@ -17,7 +17,9 @@ namespace ServiceVPT
         public static void ParceLesson()
         {
             //XDocument xdoc = XDocument.Load(GlobalSetting.Path + @"\shedule\" + "DefaulTest");
-            XDocument xdoc = XDocument.Load(@"C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\schedule\DefaultTest");
+            //XDocument xdoc = XDocument.Load(@"C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\schedule\DefaultTest");
+            XDocument xdoc = XDocument.Load(GlobalSetting.PathTypeSheduleNow);
+
             foreach (XElement LessonElement in xdoc.Element("Schedule").Elements("pair"))
             {
                 Lesson lesson = new Lesson();

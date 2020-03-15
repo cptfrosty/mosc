@@ -1,0 +1,9 @@
+D:\Project\Git\MOSC-\mosc\ServiceMOSC\ServiceVPT\obj\Release\ServiceVPT.csprojAssemblyReference.cache
+D:\Project\Git\MOSC-\mosc\ServiceMOSC\ServiceVPT\obj\Release\ServiceVPT.Installer1.resources
+D:\Project\Git\MOSC-\mosc\ServiceMOSC\ServiceVPT\obj\Release\ServiceVPT.csproj.GenerateResource.cache
+D:\Project\Git\MOSC-\mosc\ServiceMOSC\ServiceVPT\obj\Release\ServiceVPT.csproj.CoreCompileInputs.cache
+D:\Project\Git\MOSC-\mosc\ServiceMOSC\ServiceVPT\bin\Release\ServiceVPT.exe.config
+D:\Project\Git\MOSC-\mosc\ServiceMOSC\ServiceVPT\bin\Release\ServiceVPT.exe
+D:\Project\Git\MOSC-\mosc\ServiceMOSC\ServiceVPT\bin\Release\ServiceVPT.pdb
+D:\Project\Git\MOSC-\mosc\ServiceMOSC\ServiceVPT\obj\Release\ServiceVPT.exe
+D:\Project\Git\MOSC-\mosc\ServiceMOSC\ServiceVPT\obj\Release\ServiceVPT.pdb

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,7 +67,7 @@ namespace MOSC
         public static void Start()
         {
             ParseXMLToList();
-            CheckNextCall();
+            //CheckNextCall();
         }
 
         /// <summary>
@@ -74,24 +75,30 @@ namespace MOSC
         /// </summary>
         public static void ParseXMLToList()
         {
-            XDocument xdoc = XDocument.Load(GlobalSetting.Path + @"\schedule\" + GlobalSetting.GetTypeScheduleActiveToFile());
-            //XDocument xdoc = XDocument.Load(@"C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\schedule\DefaultTest");
-            foreach (XElement LessonElement in xdoc.Element("Schedule").Elements("pair"))
+            FileInfo dirInfo = new FileInfo(GlobalSetting.Path + @"\schedule\" + GlobalSetting.GetTypeScheduleActiveToFile());
+
+            if (dirInfo.Exists)
             {
-                Lesson lesson = new Lesson();
 
-                XElement startHour = LessonElement.Element("StartHour");
-                XElement startMinutes = LessonElement.Element("StartMinutes");
-                XElement endHour = LessonElement.Element("EndHour");
-                XElement endMinutes = LessonElement.Element("EndMinutes");
+                XDocument xdoc = XDocument.Load(GlobalSetting.Path + @"\schedule\" + GlobalSetting.GetTypeScheduleActiveToFile());
+                //XDocument xdoc = XDocument.Load(@"C:\Users\Frosty\source\repos\ServiceVPT\ServiceVPT\bin\Debug\schedule\DefaultTest");
+                foreach (XElement LessonElement in xdoc.Element("Schedule").Elements("pair"))
+                {
+                    Lesson lesson = new Lesson();
 
-                lesson.startLesson = new DateTime
-                    (DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day,
-                    int.Parse(startHour.Value), int.Parse(startMinutes.Value), 0);
-                lesson.endLesson = new DateTime
-                    (DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day,
-                    int.Parse(endHour.Value), int.Parse(endMinutes.Value), 0);
-                lessons.Add(lesson);
+                    XElement startHour = LessonElement.Element("StartHour");
+                    XElement startMinutes = LessonElement.Element("StartMinutes");
+                    XElement endHour = LessonElement.Element("EndHour");
+                    XElement endMinutes = LessonElement.Element("EndMinutes");
+
+                    lesson.startLesson = new DateTime
+                        (DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day,
+                        int.Parse(startHour.Value), int.Parse(startMinutes.Value), 0);
+                    lesson.endLesson = new DateTime
+                        (DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day,
+                        int.Parse(endHour.Value), int.Parse(endMinutes.Value), 0);
+                    lessons.Add(lesson);
+                }
             }
         }
 

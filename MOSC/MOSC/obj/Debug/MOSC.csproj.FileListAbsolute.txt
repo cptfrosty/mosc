@@ -71,3 +71,5 @@ D:\projects\VisualStudio\MOSC\mosc\MOSC\MOSC\obj\Debug\MOSC.exe
 D:\projects\VisualStudio\MOSC\mosc\MOSC\MOSC\obj\Debug\MOSC.pdb
 D:\projects\VisualStudio\MOSC\mosc\MOSC\MOSC\obj\Debug\PageResources.g.cs
 D:\projects\VisualStudio\MOSC\mosc\MOSC\MOSC\obj\Debug\PageResources.baml
+D:\Project\Git\MOSC-\mosc\MOSC\MOSC\obj\Debug\PageResources.g.cs
+D:\Project\Git\MOSC-\mosc\MOSC\MOSC\obj\Debug\PageResources.baml

@@ -17,7 +17,7 @@
 
             <TextBlock x:Name="timeNow" Text="Время сейчас: Обновляю..." FontSize="16" Canvas.Left="10" Canvas.Top="87" Width="506"/>
             <TextBlock x:Name="typeSchedule" Text="Служба работает по расписанию: Основное расписание" FontSize="16" Canvas.Left="10" Canvas.Top="61" Width="506"/>
-            <TextBlock x:Name="sheduleNext" Text="Звонок в: Обновляю..." FontSize="16" Canvas.Left="10" Canvas.Top="113" Width="506"/>
+            <TextBlock Text="Если вы только что установили эту программу, то сперва настройте её!" FontSize="16" Canvas.Left="10" Canvas.Top="149" Width="506" TextWrapping="Wrap"/>
         </Canvas>
     </Grid>
 </Page>

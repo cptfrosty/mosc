@@ -1,51 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schedule>
   <pair name="Pair0">
-    <StartHour></StartHour>
-    <StartMinutes></StartMinutes>
-    <EndHour></EndHour>
-    <EndMinutes></EndMinutes>
+    <StartHour>12</StartHour>
+    <StartMinutes>12</StartMinutes>
+    <EndHour>12</EndHour>
+    <EndMinutes>12</EndMinutes>
   </pair>
   <pair name="Pair1">
-    <StartHour></StartHour>
-    <StartMinutes></StartMinutes>
-    <EndHour></EndHour>
-    <EndMinutes></EndMinutes>
+    <StartHour>12</StartHour>
+    <StartMinutes>12</StartMinutes>
+    <EndHour>12</EndHour>
+    <EndMinutes>12</EndMinutes>
   </pair>
   <pair name="Pair2">
-    <StartHour></StartHour>
-    <StartMinutes></StartMinutes>
-    <EndHour></EndHour>
-    <EndMinutes></EndMinutes>
+    <StartHour>12</StartHour>
+    <StartMinutes>12</StartMinutes>
+    <EndHour>12</EndHour>
+    <EndMinutes>12</EndMinutes>
   </pair>
   <pair name="Pair3">
-    <StartHour></StartHour>
-    <StartMinutes></StartMinutes>
-    <EndHour></EndHour>
-    <EndMinutes></EndMinutes>
+    <StartHour>12</StartHour>
+    <StartMinutes>12</StartMinutes>
+    <EndHour>12</EndHour>
+    <EndMinutes>12</EndMinutes>
   </pair>
   <pair name="Pair4">
-    <StartHour></StartHour>
-    <StartMinutes></StartMinutes>
-    <EndHour></EndHour>
-    <EndMinutes></EndMinutes>
+    <StartHour>12</StartHour>
+    <StartMinutes>12</StartMinutes>
+    <EndHour>12</EndHour>
+    <EndMinutes>12</EndMinutes>
   </pair>
   <pair name="Pair5">
-    <StartHour></StartHour>
-    <StartMinutes></StartMinutes>
-    <EndHour></EndHour>
-    <EndMinutes></EndMinutes>
+    <StartHour>12</StartHour>
+    <StartMinutes>12</StartMinutes>
+    <EndHour>12</EndHour>
+    <EndMinutes>12</EndMinutes>
   </pair>
   <pair name="Pair6">
-    <StartHour></StartHour>
-    <StartMinutes></StartMinutes>
-    <EndHour></EndHour>
-    <EndMinutes></EndMinutes>
+    <StartHour>12</StartHour>
+    <StartMinutes>12</StartMinutes>
+    <EndHour>12</EndHour>
+    <EndMinutes>12</EndMinutes>
   </pair>
   <pair name="Pair7">
-    <StartHour></StartHour>
-    <StartMinutes></StartMinutes>
-    <EndHour></EndHour>
-    <EndMinutes></EndMinutes>
+    <StartHour>12</StartHour>
+    <StartMinutes>12</StartMinutes>
+    <EndHour>12</EndHour>
+    <EndMinutes>12</EndMinutes>
   </pair>
 </Schedule>

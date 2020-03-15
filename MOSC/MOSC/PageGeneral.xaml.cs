@@ -37,7 +37,7 @@ namespace MOSC
             timer.IsEnabled = true;
             timer.Tick += (o, e) => {
                 timeNow.Text = "Время сейчас: " + DateTime.Now.ToString();
-                sheduleNext.Text = Schedule.NextCall.Hour + " : " + Schedule.NextCall.Minute;
+                //sheduleNext.Text = Schedule.NextCall.Hour + " : " + Schedule.NextCall.Minute;
             };
             timer.Start();
         }
@@ -50,7 +50,7 @@ namespace MOSC
 
             if (ServiceController.CheckAvailability())
             {
-
+                MessageBox.Show(ServiceController.GetStatus().ToString());
                 //Если служба остановлена, то передаём глобальное значение
                 if (!ServiceController.GetStatus())
                 {
@@ -81,14 +81,20 @@ namespace MOSC
         /// </summary>
         public void SetPageInfo()
         {
+            
             //Если служба работает
-            if (ServiceController.GetStatus())
+            if (GlobalSetting.isService)
             {
                 infoService.Foreground = Brushes.Green;
                 infoService.Text = "Служба работает";
 
                 btnOffService.IsEnabled = true;
                 btnRunService.IsEnabled = false;
+
+                SettingService.mainPage.btnSchedule.IsEnabled = false;
+                SettingService.mainPage.btnTask.IsEnabled = false;
+                SettingService.mainPage.btnResources.IsEnabled = false;
+
             }
             //Если служба не работает
             else
@@ -97,6 +103,10 @@ namespace MOSC
                 infoService.Text = "Служба не работает";
                 btnOffService.IsEnabled = false;
                 btnRunService.IsEnabled = true;
+
+                SettingService.mainPage.btnSchedule.IsEnabled = true;
+                SettingService.mainPage.btnTask.IsEnabled = true;
+                SettingService.mainPage.btnResources.IsEnabled = true;
             }
         }
 
@@ -110,11 +120,15 @@ namespace MOSC
             btnOffService.IsEnabled = false;
             btnRunService.IsEnabled = false;
 
-            ServiceController.ServiceStop();
-
             infoService.Foreground = Brushes.Red;
             infoService.Text = "Служба не работает";
             btnRunService.IsEnabled = true;
+
+            SettingService.mainPage.btnSchedule.IsEnabled = true;
+            SettingService.mainPage.btnTask.IsEnabled = true;
+            SettingService.mainPage.btnResources.IsEnabled = true;
+
+            ServiceController.ServiceStop();
         }
 
         /// <summary>
@@ -127,11 +141,15 @@ namespace MOSC
             btnOffService.IsEnabled = false;
             btnRunService.IsEnabled = false;
 
-            ServiceController.ServiceStart();
-
             infoService.Foreground = Brushes.Green;
             infoService.Text = "Служба работает";
             btnOffService.IsEnabled = true;
+
+            SettingService.mainPage.btnSchedule.IsEnabled = false;
+            SettingService.mainPage.btnTask.IsEnabled = false;
+            SettingService.mainPage.btnResources.IsEnabled = false;
+
+            ServiceController.ServiceStart();
         }
     }
 }

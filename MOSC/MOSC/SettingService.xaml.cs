@@ -19,10 +19,15 @@ namespace MOSC
     /// </summary>
     public partial class SettingService : Window
     {
+        public static SettingService mainPage;
+
         public SettingService()
         {
             InitializeComponent();
+            mainPage = this;
             Schedule.Start();
+            GlobalSetting.LoadGlobalSettings();
+            CantSetting();
         }
 
         private void btnGeneral_Click(object sender, RoutedEventArgs e)
@@ -44,6 +49,20 @@ namespace MOSC
             pageContent.NavigationService.RemoveBackEntry();
             PageTask pageTask = new PageTask();
             pageContent.Content = pageTask;
+        }
+
+        private void btnResources_Click(object sender, RoutedEventArgs e)
+        {
+            pageContent.NavigationService.RemoveBackEntry();
+            PageResources pageTask = new PageResources();
+            pageContent.Content = pageTask;
+        }
+
+        void CantSetting()
+        {
+            btnSchedule.IsEnabled = false;
+            btnTask.IsEnabled = false;
+            btnResources.IsEnabled = false;
         }
     }
 }

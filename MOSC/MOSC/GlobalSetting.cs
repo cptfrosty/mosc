@@ -50,7 +50,7 @@ namespace MOSC
             string nameFile = "";
             switch (TypeScheduleNow)
             {
-                case TypeScheduleActive.MainSchedule: nameFile = "Default"; break;
+                case TypeScheduleActive.MainSchedule: nameFile = "MainSchedule"; break;
                 case TypeScheduleActive.ReducedSchedule: nameFile = "Reduced"; break;
                 case TypeScheduleActive.Profile1: nameFile = "P1"; break;
                 case TypeScheduleActive.Profile2: nameFile = "P2"; break;
@@ -64,17 +64,18 @@ namespace MOSC
         /// </summary>
         public static string Path = AppDomain.CurrentDomain.BaseDirectory;
 
-        public static void SaveGlobalSettigs()
+        public static bool SaveGlobalSettigsSound()
         {
             XDocument xdoc = new XDocument(new XElement("Setting", 
-                new XElement("TypeSheduleNow", TypeScheduleNow),
+                new XElement("TypeSheduleNow", Path + @"schedule\" + GetTypeScheduleActiveToFile()),
+                new XElement("PathMusicForFiveMinutesStartPair", pathMusicForFiveMinutesStartPair),
                 new XElement("PathMusicStartPair", pathMusicStartPair),
-                new XElement("pathMusicEndPair", pathMusicEndPair),
-                new XElement("pathMusicForFiveMinutesEndPair", pathMusicForFiveMinutesEndPair)
+                new XElement("PathMusicEndPair", pathMusicEndPair),
+                new XElement("PathMusicForFiveMinutesEndPair", pathMusicForFiveMinutesEndPair)
                 ));
 
 
-            string path = $@"{Environment.CurrentDirectory}\setting\setting";
+            string path = $@"{Environment.CurrentDirectory}\setting";
 
             //Создать путь к директории
             DirectoryInfo dirInfo = new DirectoryInfo(path);
@@ -83,13 +84,14 @@ namespace MOSC
             if (!dirInfo.Exists) dirInfo.Create();
 
             //Сохранить документ
-            xdoc.Save($@"{path}\");
+            xdoc.Save($@"{path}\setting_s");
 
+            return true;
         }
 
         public static void LoadGlobalSettings()
         {
-            string path = $@"{Environment.CurrentDirectory}\setting\setting";
+            string path = $@"{Environment.CurrentDirectory}\setting\setting_s";
 
             //Путь к загрузке
 
@@ -118,6 +120,7 @@ namespace MOSC
                 case "Profile3": TypeScheduleNow = TypeScheduleActive.Profile3; break;
             }
 
+            pathMusicForFiveMinutesStartPair = xdoc.Element("Setting").Element("PathMusicForFiveMinutesStartPair").Value;
             pathMusicStartPair = xdoc.Element("Setting").Element("PathMusicStartPair").Value;
             pathMusicEndPair = xdoc.Element("Setting").Element("PathMusicEndPair").Value;
             pathMusicForFiveMinutesEndPair = xdoc.Element("Setting").Element("PathMusicForFiveMinutesEndPair").Value;
